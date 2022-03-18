@@ -1,0 +1,3 @@
+﻿  hack.cpp
+C:\Users\ludo\source\repos\hack404\hack404\hack.cpp(57,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  hack404.vcxproj -> C:\Users\ludo\source\repos\hack404\Debug\hack404.exe
