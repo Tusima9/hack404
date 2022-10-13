@@ -6,8 +6,8 @@ using namespace std;
 void PrintIntroduction(int Difficulty) 
 {
 	    //Print welcome message to the terminal
-	    cout << " \n\nYou are a secret agent breaking into a level "<<Difficulty;
-		cout << " Secure server room...\nEnter the correct code to continue...\n\n";
+	    cout << " \n\nあなたは、レベルに侵入する秘密工作員です "<<Difficulty;
+		cout << " セキュリティの高いサーバールーム...\n正しいコードを入力してください...\n\n";
 
 }
 bool PlayGame(int Difficulty) 
@@ -23,9 +23,9 @@ bool PlayGame(int Difficulty)
 		const int CodeProduct = CodeA*CodeB*CodeC;
 
 		//Print summ and product to the terminal
-		cout << "+ There are 3 numbers in the code";
-		cout << "\n+ The code add up to: " << CodeSum;
-		cout << "\n+ The code multiply to give: " << CodeProduct<<endl;
+		cout << "+ コードには3つの数字があります";
+		cout << "\n+ コードの合計は: " << CodeSum;
+		cout << "\n+ コードを乗算するなら　その数学は：" << CodeProduct<<endl;
 
 		//Store player guess
 		int GuessA, GuessB, GuessC;
@@ -37,12 +37,12 @@ bool PlayGame(int Difficulty)
 		//Check if the player guess is correct
 		if (GuessSum == CodeSum && GuessProduct == CodeProduct)
 		{
-			cout << "\n*** Well done agent! You have extracted a file! Keep going! ***";
+			cout << "\n*** よくやったエージェント! ファイルを抽出しましたね! 続け! ***";
 			return true;
 		}
 		else
 		{
-			cout << "\n*** You entered the wrong code! Carefull agent! Try again *** ";
+			cout << "\n*** コードの入力を間違えました！慎重に扱ってください。再試行 *** ";
 			
 			return false;
 			
@@ -73,7 +73,7 @@ int main()
 	   
 
 	}
-	cout << "\n*** Great work agent! You got all the files! Now let's get out of here!*** \n ";
+	cout << "\n*** よくやった、エージェント! すべてのファイルを手に入れましたね！さあ、ここから出よう！*** \n ";
 
     return 0;
 }
